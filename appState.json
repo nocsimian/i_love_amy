@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "38f612ce-e9d7-4da2-9edc-fac349fc6bf8": {
+        "id": "38f612ce-e9d7-4da2-9edc-fac349fc6bf8",
+        "parent": null,
+        "name": "i_love_amy",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "ff530778-dfc3-43e2-88a5-17cf09ed52ce"
+        ],
+        "isRemovable": false,
+        "filePath": "i_love_amy"
+      },
+      "ff530778-dfc3-43e2-88a5-17cf09ed52ce": {
+        "id": "ff530778-dfc3-43e2-88a5-17cf09ed52ce",
+        "parent": "38f612ce-e9d7-4da2-9edc-fac349fc6bf8",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "i_love_amy/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1SMSGatewaysendSMSpost",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "38f612ce-e9d7-4da2-9edc-fac349fc6bf8",
+    "openFiles": [
+      "ff530778-dfc3-43e2-88a5-17cf09ed52ce"
+    ],
+    "currentFileId": "ff530778-dfc3-43e2-88a5-17cf09ed52ce",
+    "resources": {
+      "apigusEast1SMSGatewaysendSMSpost": {
+        "name": "apigusEast1SMSGatewaysendSMSpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "SMSGateway",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "sendSMS",
+          "resourcePath": "/sendSMS",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "i_love_amy",
+    "projectDescription": "SMS sender for love notes",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1565083055799
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "i_love_amy",
+      "url": "https://github.com/nocsimian/i_love_amy"
+    }
+  }
+}
